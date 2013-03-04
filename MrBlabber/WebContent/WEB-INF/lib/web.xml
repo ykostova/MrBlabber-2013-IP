@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Welcome</display-name>
+  <welcome-file-list>
+    <welcome-file>HomeController</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.HomeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/Home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EditProfileServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.EditProfileServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>EditProfileServlet</servlet-name>
+    <url-pattern>/Profile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TweetsServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.TweetsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>TweetsServlet</servlet-name>
+    <url-pattern>/MyTweets</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoadNewsServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.LoadNewsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoadNewsServlet</servlet-name>
+    <url-pattern>/Tweets</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoadFollowersServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.LoadFollowersServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoadFollowersServlet</servlet-name>
+    <url-pattern>/Followers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoadFollowingServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.LoadFollowingServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoadFollowingServlet</servlet-name>
+    <url-pattern>/Following</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.SearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FollowServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.FollowServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>FollowServlet</servlet-name>
+    <url-pattern>/Follow</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PasswordServlet</servlet-name>
+    <servlet-class>uk.ac.dundee.computing.yek.controller.PasswordServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>PasswordServlet</servlet-name>
+    <url-pattern>/Account</url-pattern>
+  </servlet-mapping>
+</web-app>

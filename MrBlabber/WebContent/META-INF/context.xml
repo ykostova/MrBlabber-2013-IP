@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context>
+<Resource name="jdbc/YolinaKostova" 
+              auth="Container" 
+              type="javax.sql.DataSourceFactory" 
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              testWhileIdle="true"
+              testOnBorrow="true"
+              testOnReturn="false"
+              validationQuery="SELECT 1"
+              validationInterval="30000"
+              timeBetweenEvictionRunsMillis="30000"
+              maxActive="100" 
+              minIdle="10" 
+              maxWait="10000" 
+              initialSize="10"
+              removeAbandonedTimeout="60"
+              removeAbandoned="true"
+              logAbandoned="true"
+              minEvictableIdleTimeMillis="30000" 
+              jmxEnabled="true"
+              jdbcInterceptors=
+"org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+              username="YolinaKostova" 
+              password="ac31004" 
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://arlia.computing.dundee.ac.uk/YolinaKostova"/>
+
+<Resource type="javax.sql.DataSource"
+            name="jdbc/CF1"
+            factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+            driverClassName="com.mysql.jdbc.Driver"
+            url="jdbc:mysql://arlia.computing.dundee.ac.uk/YolinaKostova"
+/>
+
+</context>
